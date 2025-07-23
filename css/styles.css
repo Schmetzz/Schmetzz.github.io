@@ -1,0 +1,113 @@
+/*The below root values will act as reusable colors for a consistent palette.*/
+:root{
+    --engOrange: rgb(186, 18, 0);
+    --richBlack: rgb(3,25,39);
+    --babyBlue: rgb(157,209,241);
+    --airForceBlue: rgb(80,138,168);
+    --pompPower: rgb(125,107,145);
+}
+
+/*Box-sizing ensures that the padding and border are included in the size of all elements on the page.*/ 
+* {
+    box-sizing:border-box;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+    padding: 0px;
+  }
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+/*Handles how the whole page is sized and the background color.*/
+body{
+    background-color: white;
+    margin: 0px;
+}
+
+h1{
+    font-size:4rem;
+    color:var(--engOrange);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+p{
+    font-size:1.5rem;
+    color:var(--richBlack);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/*Styles the top nav bar.*/
+.nav-list{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+    top: 0;
+}
+
+.nav-list li{
+    list-style-type: none;
+}
+
+.nav-list li a{
+    text-decoration: none;
+}
+
+.nav-list li a:hover{
+    color: var(--engOrange);
+}
+
+/*allows text to be displayed over the image.*/
+.land-img {
+    position: relative;
+    text-align: left;
+    color: var(--richBlack);
+    font-size: 4rem;
+  }
+
+.land-img img {
+    max-width: 100%;
+}
+
+/*Positions the text on the image*/
+.land-text{
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+.about-img-container img{
+    width: 100%;
+}
+
+footer{
+    color: var(--engOrange);
+    background-color: var(--richBlack);
+}
+footer div{
+    height: 3rem;
+    padding-left: 1rem;
+    text-align: justify;
+}
