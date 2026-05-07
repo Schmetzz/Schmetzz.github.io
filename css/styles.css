@@ -40,6 +40,9 @@
 body{
     background-color: white;
     margin: 0px;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1{
