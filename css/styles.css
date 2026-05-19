@@ -9,16 +9,23 @@
 
 /*Handles how the whole page is sized and the background color.*/
 body{
-    background-color: var(--engOrange);
+    background-color: var(--babyBlue);
     margin: 0;
     max-width: 80rem;
     margin-left: auto;
     margin-right: auto;
+
+}
+
+#body{
     display: grid;
+    grid-gap: 1rem;
     grid-template-areas:"navbar header header header header"
                         "navbar main main main main"
                         "navbar footer footer footer footer";
 }
+
+/*Defines the layout of the navigation bar, header, main and footer for use in the HTML*/
 #navbar{
     grid-area: navbar;
 }
@@ -33,9 +40,9 @@ body{
 }
 
 #project-grid{
-    display: grid;
-    grid-template-columns: auto auto auto;
+    grid-area: main;
 }
+
 ul {
     list-style-type: none;
     margin: 0;
