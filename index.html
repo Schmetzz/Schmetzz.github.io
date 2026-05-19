@@ -2,193 +2,43 @@
 <html lang="en-US">
     <head>
         <meta charset="UTF-8">
-        <meta name="description" content="A website for practicing old skills and learning new ones.">
-        <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio, Gabriel Hancock, Web Development, Game Development, Quality Assurance, User Experience">
+        <meta name="description" content="A portfolio website showcasing the projects and skills of Gabriel Hancock, 
+            a web developer and game design enthusiast.">
+        <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio, Gabriel Hancock, Web Development, 
+            Game Development, Quality Assurance, User Experience">
         <meta name="author" content="Gabriel Hancock">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="index.js"></script> 
         <link rel="stylesheet" href="./css/styles.css">
         <link rel="JavaScript" href="index.js">
-        <favicon href="/images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
         <title>Gabriel's Portfolio</title>
     </head>
     <body>
-        <!--id home allows the user to jump to start on the page.-->
-        <div id="home">
-            <!--Displays the nav bar in the header using a flex container display type-->
-            <div class="row">
-                <header class ="col-12">
-                        <ul class="nav-list">
-                            <li><a href="#home"> | Home | </a></li>
-                            <li><a href="#about"> | About | </a></li>
-                            <li><a href="#projects"> | Projects | </a></li>
-                            <li><a href="#contact"> | Contact | </a></li>
-                        </ul>
-                </header>
-            </div>
-    
-            <!--Displays the main image of the webpage and the tag line overtop.-->
-            <div class="row">
-                <div class="col-12">
-                    <div class="land-img">
-                        <img src="/images/LandingImage.jpg" alt="Mountain range in Banff, Alberta.">
-                        <div class="land-text">Gabriel Hancock, web developer and game design enthusiast</div>
-                    </div>
+        <div id="body">
+            <header id="header">
+                <h1>Gabriel Hancock's Portfolio</h1>
+                <h3>Web Developer & Game Design Enthusiast</h3>
+            </header>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="index.html">Gabriel Hancock</a></li>
+                    <li><a href="pages/projects.html">Projects</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <main id="main">
+                <h2>Projects</h2>
+                <div id="projects-grid">
+                    <!-- Project cards will be statically inserted here -->
+                    <img src="/images/dog.jpg" alt="Project 1 Screenshot">
+                    <img src="/images/LandingImage.jpg" alt="Project 2 Screenshot">
+                    <img src="/images/dog.jpg" alt="Project 3 Screenshot"> 
                 </div>
-            </div>
+            </main>
+            <footer id="footer">
+                <p>&copy; 2026 Gabriel Hancock. All rights reserved.</p>
+            </footer>
         </div>
-
-        <!--id about allows the user to jump to specific sections on the page.-->
-        <div id="about">
-            <div class="row">
-                <div class="col-8">
-                    <div class="about-container">
-                        <div class="about-text">
-                            <h1>A Bit About Me</h1>
-                            <p>
-                                Hi, I’m Gabriel—a <b>web developer</b> and <b>game design enthusiast</b> 
-                                from Brantford, Ontario. I hold a diploma in Computer Programming 
-                                from Conestoga College and a Bachelor’s in Game Design and Development 
-                                from Wilfrid Laurier University. 
-                            </p>
-                            <p>
-                                This portfolio is where I share my 
-                                projects and creative work, with links to my LinkedIn and GitHub so 
-                                you can explore what I’m building. If you’d like to collaborate or just 
-                                say hello, feel free to reach out—I’d love to connect!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="about-img-container">
-                        <img src="/images/Me.jpg" alt="An image of Gabriel Hancock">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="skills">
-            <div class="row">
-                <div class="col-4">
-                    <h2>Web Development and Design</h2>
-                </div>
-                <div class="col-8">
-                    
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-4">
-                    <h2>Game Development and Design</h2>
-                </div>
-                <div class="col-8">
-                    
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-4">
-                    <h2>Quality Assurance and Testing</h2>
-                </div>
-                <div class="col-8">
-
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-4">
-                    <h2>User Experience</h2>
-                </div>
-                <div class="col-8">
-                    
-                </div>
-            </div>
-        </div>
-        <!--id projects allows the user to jump to start on the page.-->
-        <div id="projects">
-            <div class="row">
-                <div class="col-12">
-                    <div class="projects-container">
-                        <h1>Projects</h1>
-                        <p>
-                            The majority of my projects or current works in progress are on Github. 
-                            The code is accessible from there, including the code used to make this website.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!--This is where I will talk about the projects that I am working on or have worked on in the past.-->
-            <div class="row">
-                <div class="col-2">
-                    <h2>Project 1 Name</h2>
-                </div>
-                <div class="col-6">
-                    <p>Project 1 Description</p>
-                </div>
-                <div class="col-4">
-                    <h2>Project 1 Image</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-2">
-                    <h2>Project 2 Name</h2>
-                </div>
-                <div class="col-6">
-                    <p>Project 2 Description</p>
-                </div>
-                <div class="col-4">
-                    <h2>Project 2 Image</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-2">
-                    <h2>Project 3 Name</h2>
-                </div>
-                <div class="col-6">
-                    <p>Project 3 Description</p>
-                </div>
-                <div class="col-4">
-                    <h2>Project 3 Image</h2>
-                </div>
-            </div>
-        </div>
-
-        <!--id contact allows the user to jump to start on the page.-->
-        <div id="contact">
-            <div class="row">
-                <div class="col-4">
-                    <h1>Contact</h1>
-                    <address>
-                        GABRIEL HANCOCK <br>
-                        194 CHATHAM ST <br>
-                        BRANTFORD ON N3S4G7
-                    </address>
-                    <p>Cell: (519) 802-4570</p>
-                    <p>Email: gabrielhancock969@gmail.com</p>
-                </div>
-                <div class="col-8">
-                    <div class="contact-container">
-                        <div class="contact-form">
-                            <!--This is where I will put the form that will allow people to email me.-->
-                            <form method="post" action="">
-                                <label for="fname">First Name:</label><br>
-                                <input type="text" id="fname" name="fname" style="width: 300px"/><br>
-                                <label for="lname">Last Name:</label><br>
-                                <input type="text"id="lname" name="lname" style="width: 300px"/><br>
-                                <label for="email">Email:</label><br>
-                                <input type="email"id="email" name="email" style="width: 300px"/><br>
-                                <label for="message">Message: </label><br>
-                                <input type="textarea" id="message" name="message" style="width: 300px; height: 200px;"/><br>
-                                <button type="submit">Send Message</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>  
-        <footer>
-            <div class="row">
-                <div class="col-12">
-                    &copy; Gabriel Hancock 2024
-                </div>
-            </div>
-        </footer>
     </body>
 </html>
