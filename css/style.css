@@ -1,0 +1,93 @@
+/*Reusable colors for a consistent palette.*/
+:root{
+    --engOrange: rgb(186, 18, 0);
+    --richBlack: rgb(3,25,39);
+    --babyBlue: rgb(157,209,241);
+    --airForceBlue: rgb(80,138,168);
+    --pompPower: rgb(125,107,145);
+}
+
+/*Handles how the whole page is sized and the background color.*/
+body{
+    background-color: var(--babyBlue);
+    margin: auto;
+    max-width: 80rem;
+    display: grid;
+    grid-template-columns: 15% auto auto auto;
+    grid-template-areas:
+        "navbar header header header"
+        "navbar main main main"
+        "navbar main main main"
+        "navbar main main main"
+        "navbar main main main"
+        "navbar main main main"
+        "navbar footer footer footer";
+}
+
+/*Defines the name to use in the grid template area above to position the elements correctly*/
+#navbar{
+    grid-area: navbar;
+}
+
+#header{
+    grid-area: header;
+}
+
+#main{
+    grid-area: main;
+}
+
+#footer{
+    grid-area: footer;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: var(--airForceBlue);
+    height: 100%;
+    position: fixed; 
+    overflow: auto;
+    border: 1px solid var(--richBlack);
+}
+
+li {
+    text-align: center;
+    border-bottom: 1px solid var(--richBlack);
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+li a {
+    display: block;
+    color: black;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+
+/* Change the link and background color on hover */
+li a:hover {
+    background-color: var(--pompPower);
+    color:white;
+}
+
+.project-card-grid {
+  display: grid;
+  /* Creates 3 equal-width columns */
+  grid-template-columns: repeat(3, 1fr); 
+  /* Adds a 20px gap between cards */
+  gap: 1rem; 
+}
+
+.project-card {
+    box-shadow: 0 4px 8px 0 var(--airForceBlue);
+    transition: 0.3s;
+    width: 100%;
+}
+
+.project-card-text{
+    padding: 2px 16px;
+}

@@ -3,42 +3,58 @@
     <head>
         <meta charset="UTF-8">
         <meta name="description" content="A portfolio website showcasing the projects and skills of Gabriel Hancock, 
-            a web developer and game design enthusiast.">
+            a web, game, and software developer.">
         <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio, Gabriel Hancock, Web Development, 
-            Game Development, Quality Assurance, User Experience">
+            Game Development, Quality Assurance, User Experience, Software Development">
         <meta name="author" content="Gabriel Hancock">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="index.js"></script> 
-        <link rel="stylesheet" href="./css/styles.css">
+        <script src="index.js"></script>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="css/normalize.css">
         <link rel="JavaScript" href="index.js">
         <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
         <title>Gabriel's Portfolio</title>
     </head>
     <body>
-        <div id="body">
-            <header id="header">
-                <h1>Gabriel Hancock's Portfolio</h1>
-                <h3>Web Developer & Game Design Enthusiast</h3>
-            </header>
-            <nav id="navbar">
-                <ul>
-                    <li><a href="index.html">Gabriel Hancock</a></li>
-                    <li><a href="pages/projects.html">Projects</a></li>
-                    <li><a href="pages/contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <main id="main">
-                <h2>Projects</h2>
-                <div id="projects-grid">
-                    <!-- Project cards will be statically inserted here -->
-                    <img src="/images/dog.jpg" alt="Project 1 Screenshot">
-                    <img src="/images/LandingImage.jpg" alt="Project 2 Screenshot">
-                    <img src="/images/dog.jpg" alt="Project 3 Screenshot"> 
+        <header id="header">
+            <h1>Gabriel Hancock's Portfolio</h1>
+            <h3>Web, Software, and Game Developer</h3>
+        </header>
+        <nav id="navbar">
+            <ul>
+                <li><a href="index.html">Gabriel Hancock</a></li>
+                <li><a href="pages/about.html">About</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <main id="main">
+            <h2>Projects</h2>
+            <div class="project-card-grid">
+                <div class="project-card">
+                    <img src="images/dog.jpg" alt="Apollo" style="width:100%">
+                    <div class="project-card-text">
+                        <h4><b>Apollo Hancock</b></h4> 
+                        <p>Professional dog and family member.</p> 
+                    </div>
                 </div>
-            </main>
-            <footer id="footer">
-                <p>&copy; 2026 Gabriel Hancock. All rights reserved.</p>
-            </footer>
-        </div>
+                <div class="project-card">
+                    <img src="images/dog.jpg" alt="Apollo" style="width:100%">
+                    <div class="project-card-text">
+                        <h4><b>Apollo Hancock</b></h4> 
+                        <p>Professional dog and family member.</p> 
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/dog.jpg" alt="Apollo" style="width:100%">
+                    <div class="project-card-text">
+                        <h4><b>Apollo Hancock</b></h4> 
+                        <p>Professional dog and family member.</p> 
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer id="footer">
+            <p>&copy; 2026 Gabriel Hancock. All rights reserved.</p>
+        </footer>
     </body>
 </html>
