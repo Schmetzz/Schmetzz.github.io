@@ -69,6 +69,7 @@ body{
   display: grid;
   /* Creates 3 equal-width columns */
   grid-template-columns: repeat(3, 1fr); 
+  grid-template-rows: auto; /* Automatically adjust row height */
   /* Adds a 20px gap between cards */
   gap: 1rem; 
 }
@@ -76,6 +77,12 @@ body{
     box-shadow: 0 4px 8px 0 var(--engOrange);
     transition: 0.3s;
     width: 100%;
+    height: 50%;
+}
+.project-card img{
+    width:100%;
+    height:40%;
+    object-fit: cover;
 }
 .project-card-text{
     padding: 2px 16px;
