@@ -2,17 +2,24 @@
 <html lang="en-US">
     <head>
         <meta charset="UTF-8">
-        <meta name="description" content="A portfolio website showcasing the projects and skills of Gabriel Hancock, a web developer and game design enthusiast.">
-        <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio, Gabriel Hancock, Web Development, Game Development, Quality Assurance, User Experience">
+        <meta name="description" content="A portfolio website showcasing the projects and skills of Gabriel Hancock, 
+            a web, game, and software developer.">
+        <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio, Gabriel Hancock, Web Development, 
+            Game Development, Quality Assurance, User Experience, Software Development">
         <meta name="author" content="Gabriel Hancock">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="index.js"></script> 
-        <link rel="stylesheet" href="./css/styles.css">
-        <link rel="JavaScript" href="index.js">
-        <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+        <script src="../index.js"></script>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="JavaScript" href="../index.js">
+        <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
         <title>Gabriel's Portfolio</title>
     </head>
     <body>
+        <header id="header">
+            <h1>Gabriel Hancock's Portfolio</h1>
+            <h3>Junior Web, Software, and Game Developer</h3>
+        </header>
         <nav id="navbar">
             <ul>
                 <li><a href="../index.html">Gabriel Hancock</a></li>
@@ -20,5 +27,20 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+        <main id="main">
+            <h2>Contact Me</h2>
+            <form action="mailto:gabrielhancock969@proton.me" method="post" enctype="text/plain">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message"></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+        </main>
+        <footer id="footer">
+            <p>&copy; 2026 Gabriel Hancock. All rights reserved.</p>
+        </footer>
     </body>
 </html>

@@ -2,17 +2,24 @@
 <html lang="en-US">
     <head>
         <meta charset="UTF-8">
-        <meta name="description" content="A portfolio website showcasing the projects and skills of Gabriel Hancock, a web developer and game design enthusiast.">
-        <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio, Gabriel Hancock, Web Development, Game Development, Quality Assurance, User Experience">
+        <meta name="description" content="A portfolio website showcasing the projects and skills of Gabriel Hancock, 
+            a web, game, and software developer.">
+        <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio, Gabriel Hancock, Web Development, 
+            Game Development, Quality Assurance, User Experience, Software Development">
         <meta name="author" content="Gabriel Hancock">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="index.js"></script> 
-        <link rel="stylesheet" href="./css/styles.css">
-        <link rel="JavaScript" href="index.js">
-        <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+        <script src="../index.js"></script>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="JavaScript" href="../index.js">
+        <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
         <title>Gabriel's Portfolio</title>
     </head>
     <body>
+        <header id="header">
+            <h1>Gabriel Hancock's Portfolio</h1>
+            <h3>Junior Web, Software, and Game Developer</h3>
+        </header>
         <nav id="navbar">
             <ul>
                 <li><a href="../index.html">Gabriel Hancock</a></li>
@@ -20,5 +27,40 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+        <main id="main">
+            <div id="about-me-grid">
+                <div id="about-me-text">
+                    <h2>About Me</h2>
+                    <p>
+                        My name is Gabriel Hancock, and I am a game designer from Brantford, Ontario. 
+                        I graduated from Wilfrid Laurier University with a bachelor of arts specializing 
+                        in game design and development. I have created numerous prototypes and helped publish
+                    a table-top game called Suspect. I value creating games that focus on delivering unique 
+                    experiences by taking in to account how the player interacts when creating content for 
+                    them to explore, so that I can keep them engaged with an enjoyable experience.
+                </p>
+            </div>
+            <div id="about-me-img">
+                <img src="../images/Me.jpg" alt="Gabriel Hancock">
+            </div>
+            <div>
+                <h3>Highlights of my skills:</h3>
+                <ul>
+                    <li>
+                        <b>Systems thinker:</b> I view the whole project and understand what each component does. This includes analyzing what needs to be improved, cut, or maintained.
+                    </li>
+                    <li>
+                        <b>Project Management and Organization:</b> I excel at organizing my time to meet deadlines.
+                    </li>
+                    <li>
+                        <b>Flexible Problem Solver:</b> I can handle major changes and potential issues that arise from the iterative game design process.
+                    </li>
+                </ul>
+            </div>
+            
+        </main>
+        <footer id="footer">
+            <p>&copy; 2026 Gabriel Hancock. All rights reserved.</p>
+        </footer>
     </body>
 </html>

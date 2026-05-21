@@ -5,11 +5,12 @@
     --babyBlue: rgb(157,209,241);
     --airForceBlue: rgb(80,138,168);
     --pompPower: rgb(125,107,145);
+    --terminalGreen: rgb(102, 255, 102);
 }
-
 /*Handles how the whole page is sized and the background color.*/
 body{
-    background-color: var(--babyBlue);
+    color: var(--terminalGreen);
+    background-color: var(--richBlack);
     margin: auto;
     max-width: 80rem;
     display: grid;
@@ -23,57 +24,47 @@ body{
         "navbar main main main"
         "navbar footer footer footer";
 }
-
 /*Defines the name to use in the grid template area above to position the elements correctly*/
 #navbar{
     grid-area: navbar;
 }
-
 #header{
     grid-area: header;
 }
-
 #main{
     grid-area: main;
 }
-
 #footer{
     grid-area: footer;
 }
-
-ul {
+#navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: var(--airForceBlue);
-    height: 100%;
+    background-color: var(--richBlack);
+    height: 99.5%;
     position: fixed; 
     overflow: auto;
-    border: 1px solid var(--richBlack);
+    border: 1px solid var(--terminalGreen);
 }
-
-li {
+#navbar li {
     text-align: center;
-    border-bottom: 1px solid var(--richBlack);
+    border-bottom: 1px solid var(--terminalGreen);
 }
-
-li:last-child {
+#navbar li:last-child {
     border-bottom: none;
 }
-
-li a {
+#navbar li a {
     display: block;
-    color: black;
+    color: var(--terminalGreen);
     padding: 0.5rem 1rem;
     text-decoration: none;
 }
-
 /* Change the link and background color on hover */
-li a:hover {
-    background-color: var(--pompPower);
-    color:white;
+#navbar li a:hover {
+    background-color: var(--engOrange);
+    color: var(--babyBlue);
 }
-
 .project-card-grid {
   display: grid;
   /* Creates 3 equal-width columns */
@@ -81,13 +72,19 @@ li a:hover {
   /* Adds a 20px gap between cards */
   gap: 1rem; 
 }
-
 .project-card {
-    box-shadow: 0 4px 8px 0 var(--airForceBlue);
+    box-shadow: 0 4px 8px 0 var(--engOrange);
     transition: 0.3s;
     width: 100%;
 }
-
 .project-card-text{
     padding: 2px 16px;
+}
+#about-me-grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 1rem;
+}
+#about-me-grid img{
+    width: 50%;
 }
